@@ -32,11 +32,6 @@ const Navbar = () => {
       title: "Services",
       path: "#services",
     },
-    {
-      id: 4,
-      title: "Contact",
-      path: "#contact",
-    },
   ];
   return (
     <header className="w-full h-[80px] flex items-center fixed  font-semibold text-white bg-green-800 z-50">
