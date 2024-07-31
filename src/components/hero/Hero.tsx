@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -17,7 +19,8 @@ const Hero = () => {
 
         <div className=" mt-20 md:mt-7 flex items-center justify-center md:justify-start ">
           <Link
-            href="/#contact-us"
+            target="_blank"
+            href="https://wa.me/message/MKGP2424DC24D1"
             className="px-10 py-2 rounded-full cursor-pointer text-white bg-green-800 hover:bg-accent-300 "
           >
             Book Now

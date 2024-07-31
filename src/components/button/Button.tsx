@@ -5,7 +5,8 @@ import { BsWhatsapp } from "react-icons/bs";
 const Button = () => {
   return (
     <Link
-      href="/#contact-us"
+      target="_blank"
+      href="https://wa.me/message/MKGP2424DC24D1"
       className="font-semibold px-10 py-2 rounded-full cursor-pointer text-green-800 bg-white hover:bg-green-400 hover:text-white flex justify-center items-center gap-3"
     >
       <span>

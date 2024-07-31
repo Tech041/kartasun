@@ -10,6 +10,7 @@ import { MdClass, MdSportsGymnastics } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "../button/Button";
 import Icons from "../icons/Icons";
+import { motion } from "framer-motion";
 const styles =
   "flex gap-3 justify-start py-3 items-center hover:text-green-800";
 
@@ -26,6 +27,11 @@ const Navbar = () => {
       id: 2,
       title: "About",
       path: "#about",
+    },
+    {
+      id: 3,
+      title: "Contact",
+      path: "#contact",
     },
     {
       id: 3,
@@ -85,12 +91,12 @@ const Navbar = () => {
               <Link href="/#about">About</Link>
             </li>
             <li className={styles} onClick={() => setOpen(false)}>
-              <MdClass size={30} color="white" />{" "}
-              <Link href="/#services">Servises</Link>
+              <MdSportsGymnastics size={30} color="white" />
+              <Link href="/#contact">Contact</Link>
             </li>
             <li className={styles} onClick={() => setOpen(false)}>
-              <BsFillTelephoneForwardFill size={30} color="white" />{" "}
-              <Link href="#contact">Contact</Link>
+              <MdClass size={30} color="white" />{" "}
+              <Link href="/#services">Services</Link>
             </li>
           </ul>
           <div className="md:hidden mt-10">

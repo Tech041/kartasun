@@ -27,13 +27,15 @@ const Footer = () => {
             <Icons />
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-5">
+        <div className="flex-1 flex flex-col gap-5 ">
           <h3 className="text-xl font-bold uppercase text-accent-300">
             CONTACT US
           </h3>
           <div className="flex items-center gap-3 text-green-800">
             <FaLocationArrow size={20} />
-            <p>13B Ezeokafor Street Phase 2 Peace Estate Ipaye, Iba.</p>
+            <p>
+              13B Ezeokafor Street Phase 2 Peace Estate Ipaye, Iba, Lagos State.
+            </p>
           </div>
           <div className="flex items-center gap-3 text-green-800">
             <FaPhone size={20} />
@@ -43,7 +45,7 @@ const Footer = () => {
             <MdEmail size={20} />
             <p>reymondchuks@gmail.com</p>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden flex justify-center md:justify-start">
             <Icons />
           </div>
         </div>

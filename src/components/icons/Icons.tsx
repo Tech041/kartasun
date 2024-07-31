@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { GrTwitter } from "react-icons/gr";
 const iconsStyles =
-  "w-[40px] h-[40px] rounded-[50px] flex justify-center items-center cursor-pointer bg-green-800 hover:bg-green-400";
+  "w-[40px] h-[40px] rounded-[50px] flex justify-center items-center cursor-pointer bg-accent-300 hover:bg-green-400";
 
 const Icons = () => {
   return (
