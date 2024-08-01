@@ -47,7 +47,7 @@ const Services = () => {
           <div className="min-w-full md:min-w-[0px] md:flex-1 h-[200px] relative">
             <Image
               fill
-              src="/images/inverterGraphic4.jpg"
+              src="/images/inverterGraphic7.jpg"
               alt="solar powered house"
               className="object-cover"
             />

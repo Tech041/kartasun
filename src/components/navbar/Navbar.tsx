@@ -4,15 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
-import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
-import { MdClass, MdSportsGymnastics } from "react-icons/md";
+import { MdClass } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "../button/Button";
 import Icons from "../icons/Icons";
-import { motion } from "framer-motion";
+
+import { GiLizardman } from "react-icons/gi";
 const styles =
-  "flex gap-3 justify-start py-3 items-center hover:text-green-800";
+  "flex gap-3 justify-start py-3  text-xl items-center hover:text-green-800";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -60,9 +61,9 @@ const Navbar = () => {
         </div>
         <nav
           className={`${
-            open ? "right-0" : "right-[-100%]"
-          } w-[70%] md:w-auto h-screen md:h-auto px-5 md:px-0 
-          pt-20 md:pt-0 absolute md:static top-0 duration-500 ease-in text- bg-accent-300 md:bg-transparent`}
+            open ? "left-0" : "left-[-100%]"
+          } w-[100%] md:w-auto h-screen md:h-auto px-5 md:px-0 
+          pt-20 md:pt-0 absolute md:static  top-0 duration-500 ease-in text- bg-accent-400 md:bg-transparent`}
         >
           <ul className="flex flex-col md:flex-row gap-5">
             {links.map((link) => (
@@ -87,11 +88,11 @@ const Navbar = () => {
               <Link href="/#hero">Home</Link>
             </li>
             <li className={styles} onClick={() => setOpen(false)}>
-              <MdSportsGymnastics size={30} color="white" />
+              <GiLizardman size={30} color="white" />
               <Link href="/#about">About</Link>
             </li>
             <li className={styles} onClick={() => setOpen(false)}>
-              <MdSportsGymnastics size={30} color="white" />
+              <BsFillTelephoneInboundFill size={30} color="white" />
               <Link href="/#contact">Contact</Link>
             </li>
             <li className={styles} onClick={() => setOpen(false)}>
